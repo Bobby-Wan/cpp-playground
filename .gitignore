@@ -2,6 +2,9 @@
 *.vscode
 *.code-workspace
 
+notes
+main.cpp
+
 # Prerequisites
 *.d
 
