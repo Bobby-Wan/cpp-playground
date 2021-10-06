@@ -70,6 +70,11 @@ namespace ds{
                 ptr_current_node = temp;
             }
         }
+        list& operator=(const list& other){
+            for(auto it = other.begin(); it != other.end(); ++it){
+                this->append(*it);
+            }
+        }
         //TEST
         bool contains(const T& data) const{
             node* ptr_current_node = ptr_start_node;
@@ -135,7 +140,7 @@ namespace ds{
             // return list_iterator(ptr_end_node);
         }
 
-    private:      
+    public:
         bool is_empty()const{
             return ptr_start_node == nullptr && ptr_end_node == nullptr;
         }
