@@ -1,3 +1,12 @@
+#vs code
+*.vscode
+*.code-workspace
+
+notes
+main.cpp
+demos
+neural
+
 # Prerequisites
 *.d
 

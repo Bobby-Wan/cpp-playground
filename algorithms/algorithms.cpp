@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include "data_structures/vector.hpp"
 
 class NeuralNode{
@@ -9,7 +8,7 @@ class NeuralNode{
 
 };
 
-template<typename T> size_t argmax(const std::vector<T> elements){
+template<typename T> size_t argmax(const ds::vector<T> elements){
     int max = elements[0];
     size_t index_max = 0;
 
@@ -32,7 +31,7 @@ void merge_sort(ds::vector<T> vec){
 }
 
 int main(){
-    std::vector<int> elems{10,20,30};
+    ds::vector<int> elems{10,20,30};
     std::cout<<argmax(elems)<<std::endl;
 
     return 0;
