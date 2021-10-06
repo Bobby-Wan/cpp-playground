@@ -123,7 +123,7 @@ namespace ds{
         vector(int size){
            this->start = new T[size];
            this->capacity = size;
-           this->size = 0;
+           this->size = size;
         }   
         
     public:
